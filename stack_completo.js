@@ -6,7 +6,7 @@ var Stack = function() {
     this.push = function(value) {
         this.storage[this.count] = value;
         this.count++;
-    }
+    };
 
     // Removes and returns the value at the end of the stack
     this.pop = function() {
@@ -18,16 +18,16 @@ var Stack = function() {
         var result = this.storage[this.count];
         delete this.storage[this.count];
         return result;
-    }
+    };
 
     this.size = function() {
         return this.count;
-    }
+    };
 
     // Returns the value at the end of the stack
     this.peek = function() {
         return this.storage[this.count-1];
-    }
+    };
 }
 
 var myStack = new Stack();
